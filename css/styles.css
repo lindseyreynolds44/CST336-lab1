@@ -99,6 +99,7 @@ ul {
 
 /* For the block with id "form" */
 #form {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
