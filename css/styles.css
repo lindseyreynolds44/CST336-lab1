@@ -1,16 +1,24 @@
-body {
-    background-color:#D9D9D9;
-    color:black;
-}
+
+/* --- Styling for whole site --- */
 
 header, main, nav, footer {
     text-align: center;
 }
 
-#content {
-    text-align: center;
+/* Title on each page */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
 }
 
+/* Background and text of each page */
+body {
+    background-color:#D9D9D9; /* light gray */
+    color:black;
+}
+
+/* Menu bar at the top of each page */
 nav a { /* links within "nav" container */
     padding:15px;
     padding-bottom:4px;
@@ -19,15 +27,11 @@ nav a { /* links within "nav" container */
     color: black;            /* default links are blue */
 }
 
+/* Alter menu links for hover and current page */
 nav a:hover, .current { /* pseudo class */
-    border-bottom:2px #1C9A2B solid;
+    border-bottom:2px #1C9A2B solid; /* dark green */
     font-size: 2em;
     transition: .9s; 
-}
-
-main {
-    display: flex;
-    justify-content: center;
 }
 
 footer {
@@ -35,27 +39,48 @@ footer {
     color: #06355E;
 }
 
+
+
+/* --- Styling for index.html --- */
+
+
+main {
+    display: flex; /* format to have elements side by side */
+    justify-content: center;
+}
+
+
+
+/* --- Styling for about.html page --- */
+
+/* Language experience table */
 table {
     margin:0px auto;
 }
 
+/* For each cell in the table */
 td {
     padding-right: 20px;
     font-size: 1.3em;
 }
 
+/* For bolded cells in the table */
 td strong {
     color: white;
 }
 
+/* For the id "table-header" */
 #table-header {
     background-color: #75BAF6;
 }
 
+
+/* For the class "table-row" */
 .table-row {
     background-color: #B8DEFF;
 }
 
+/* For the list */
 ul {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -64,13 +89,17 @@ ul {
     text-align: left;
 }
 
+/* For the class "hobby" */
 .hobby {
-    color: #06355E;
-    
+    color: #1C9A2B;
 }
 
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 4em;
-    margin-bottom: 0px;
+
+
+/* --- Styling for contact.html page --- */
+
+/* For the block with id "form" */
+#form {
+    text-align: center;
 }
+
