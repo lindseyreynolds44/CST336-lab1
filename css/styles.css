@@ -34,9 +34,15 @@ nav a:hover, .current { /* pseudo class */
     transition: .9s; 
 }
 
-footer {
+#footer_text {
+    padding-top:45px;
     font-size: .8em;
     color: #06355E;
+}
+
+#footer_content {
+    display: flex; /* format to have elements side by side */
+    justify-content: center;
 }
 
 
@@ -95,10 +101,12 @@ ul {
 }
 
 
+
 /* --- Styling for contact.html page --- */
 
 /* For the block with id "form" */
 #form {
-    margin:0px auto;
+    display: flex; /* format to have elements side by side */
+    justify-content: center;
 }
 
